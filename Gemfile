@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+echo "gem 'rspec-rails', group: [ :test ]" >> Gemfile
+echo "gem 'rails-controller-testing', group: [ :test ]" >> Gemfile
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -61,3 +63,7 @@ group :development do
   # gem "spring"
 end
 
+gem 'rspec-rails', group: [ :test ]
+gem 'rails-controller-testing', group: [ :test ]
+gem 'rspec-rails', group: [ :test ]
+gem 'rails-controller-testing', group: [ :test ]
